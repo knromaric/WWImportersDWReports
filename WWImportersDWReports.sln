@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.106
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "WWImportersDWReports", "WWImportersDWReports\WWImportersDWReports.rptproj", "{6C91D242-052B-4040-8A02-AF63D3E671B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.Debug|Default.ActiveCfg = Debug
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.Debug|Default.Build.0 = Debug
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.Debug|Default.Deploy.0 = Debug
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.DebugLocal|Default.Build.0 = DebugLocal
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.Release|Default.ActiveCfg = Release
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.Release|Default.Build.0 = Release
+		{6C91D242-052B-4040-8A02-AF63D3E671B8}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81FA1E03-11EE-4B27-B5A4-B397DF784137}
+	EndGlobalSection
+EndGlobal
