@@ -12,7 +12,7 @@
     <TargetDatasetFolder>Datasets</TargetDatasetFolder>
     <TargetDatasourceFolder>Data Sources</TargetDatasourceFolder>
     <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
-    <TargetServerURL>http://localhost/ReportServer</TargetServerURL>
+    <TargetServerURL>http://laptop-lbothchn/ReportServer</TargetServerURL>
     <StartItem>Orders By Year And Product Color.rdl</StartItem>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'DebugLocal' ">
@@ -49,6 +49,9 @@
     <DataSets>@(DataSet)</DataSets>
     <Reports>@(Report)</Reports>
   </PropertyGroup>
+  <ItemGroup>
+    <DataSource Include="SQLServerWWImportersDW.rds" />
+  </ItemGroup>
   <ItemGroup>
     <Report Include="Orders By Year And Product Color.rdl" />
   </ItemGroup>
