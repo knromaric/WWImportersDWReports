@@ -131,13 +131,13 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                     <Width>1in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>0.63542in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>1.25in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>1.52083in</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
@@ -155,14 +155,16 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                   <TextRun>
                                                     <Value>Color</Value>
                                                     <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
+                                                      <FontFamily>tahoma</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>#666666</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>textbox2</rd:DefaultName>
@@ -174,6 +176,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
                                               <FontFamily />
+                                              <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -193,14 +196,16 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                   <TextRun>
                                                     <Value>Calendar Month Number</Value>
                                                     <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
+                                                      <FontFamily>tahoma</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>#666666</Color>
                                                     </Style>
                                                   </TextRun>
                                                 </TextRuns>
-                                                <Style />
+                                                <Style>
+                                                  <TextAlign>Center</TextAlign>
+                                                </Style>
                                               </Paragraph>
                                             </Paragraphs>
                                             <rd:DefaultName>Textbox11</rd:DefaultName>
@@ -211,6 +216,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                               <BottomBorder>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
+                                              <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -230,8 +236,8 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                   <TextRun>
                                                     <Value>Quantity Ordered</Value>
                                                     <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
+                                                      <FontFamily>tahoma</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>#666666</Color>
                                                     </Style>
@@ -239,7 +245,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                 </TextRuns>
                                                 <Style>
                                                   <FontFamily />
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Center</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -252,6 +258,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
                                               <FontFamily />
+                                              <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -271,8 +278,8 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                   <TextRun>
                                                     <Value>Total Excluding Tax</Value>
                                                     <Style>
-                                                      <FontFamily />
-                                                      <FontSize>11pt</FontSize>
+                                                      <FontFamily>tahoma</FontFamily>
+                                                      <FontSize>9pt</FontSize>
                                                       <FontWeight>Bold</FontWeight>
                                                       <Color>#666666</Color>
                                                     </Style>
@@ -280,7 +287,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                 </TextRuns>
                                                 <Style>
                                                   <FontFamily />
-                                                  <TextAlign>Right</TextAlign>
+                                                  <TextAlign>Center</TextAlign>
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
@@ -293,6 +300,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
                                               <FontFamily />
+                                              <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -640,7 +648,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
                               <Height>0.64in</Height>
-                              <Width>4in</Width>
+                              <Width>4.40625in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
