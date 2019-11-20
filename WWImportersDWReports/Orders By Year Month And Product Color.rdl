@@ -14,19 +14,24 @@
       <Query>
         <DataSourceName>SQLServerWWImportersDW</DataSourceName>
         <CommandText>SELECT t3.[Calendar Year], 
+t3.[Calendar Month Number],
 t2.Color, 
 SUM(t1.Quantity) as [Quantity Ordered],
 SUM(t1.[Total Excluding Tax]) as [Total Excluding Tax]
 FROM [Fact].[Order] t1
 INNER JOIN [Dimension].[Stock Item] t2 ON t1.[Stock Item Key] = t2.[Stock Item Key]
 INNER JOIN [Dimension].[Date] t3 ON t1.[Order Date Key] = t3.Date
-GROUP BY t3.[Calendar Year], t2.Color
-ORDER BY t3.[Calendar Year], t2.Color</CommandText>
+GROUP BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color
+ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
         <Field Name="Calendar_Year">
           <DataField>Calendar Year</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Calendar_Month_Number">
+          <DataField>Calendar Month Number</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="Color">
@@ -55,7 +60,7 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Orders By Year And Product Color</Value>
+                    <Value>Orders By Year, Month And Product Color</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -131,6 +136,9 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>1in</Width>
+                                  </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
@@ -166,6 +174,43 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
                                                 <Style>Solid</Style>
                                               </BottomBorder>
                                               <FontFamily />
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox11">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>Calendar Month Number</Value>
+                                                    <Style>
+                                                      <FontFamily />
+                                                      <FontSize>11pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                      <Color>#666666</Color>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox11</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -297,6 +342,39 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
+                                          <Textbox Name="Textbox12">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily />
+                                                      <FontWeight>Bold</FontWeight>
+                                                      <Color>#333333</Color>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox12</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
                                           <Textbox Name="textbox6">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
@@ -403,6 +481,38 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
+                                          <Textbox Name="Calendar_Month_Number">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Fields!Calendar_Month_Number.Value</Value>
+                                                    <Style>
+                                                      <FontFamily />
+                                                      <Color>#333333</Color>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Calendar_Month_Number</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                              </Border>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
                                           <Textbox Name="Quantity_Ordered">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
@@ -482,6 +592,7 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
+                                  <TablixMember />
                                 </TablixMembers>
                               </TablixColumnHierarchy>
                               <TablixRowHierarchy>
@@ -529,7 +640,7 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
                               <Height>0.64in</Height>
-                              <Width>3in</Width>
+                              <Width>4in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
@@ -575,7 +686,7 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Top>0.43in</Top>
+            <Top>0.49944in</Top>
             <Height>1.14in</Height>
             <Width>5in</Width>
             <ZIndex>1</ZIndex>
@@ -584,10 +695,10 @@ ORDER BY t3.[Calendar Year], t2.Color</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.57in</Height>
+        <Height>2.21583in</Height>
         <Style />
       </Body>
-      <Width>5in</Width>
+      <Width>5.80208in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
