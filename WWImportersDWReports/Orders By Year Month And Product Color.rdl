@@ -90,7 +90,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>1.14in</Height>
+                  <Height>1.24417in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -128,7 +128,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1in</Width>
+                                    <Width>1.04167in</Width>
                                   </TablixColumn>
                                   <TablixColumn>
                                     <Width>0.63542in</Width>
@@ -148,6 +148,10 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                                         <CellContents>
                                           <Textbox Name="textbox2">
                                             <CanGrow>true</CanGrow>
+                                            <UserSort>
+                                              <SortExpression>=Fields!Color.Value</SortExpression>
+                                              <SortExpressionScope>table1_Color</SortExpressionScope>
+                                            </UserSort>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
                                               <Paragraph>
@@ -648,7 +652,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
                               <Height>0.64in</Height>
-                              <Width>4.40625in</Width>
+                              <Width>4.44792in</Width>
                               <ZIndex>1</ZIndex>
                               <Style>
                                 <FontFamily />
@@ -695,7 +699,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Top>0.49944in</Top>
-            <Height>1.14in</Height>
+            <Height>1.24417in</Height>
             <Width>5in</Width>
             <ZIndex>1</ZIndex>
             <Style>
