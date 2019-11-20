@@ -502,6 +502,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>DarkGray</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -555,6 +556,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>DarkGray</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -608,6 +610,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>DarkGray</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -661,6 +664,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>DarkGray</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -715,6 +719,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>DarkGray</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -769,6 +774,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>DarkGray</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -829,6 +835,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -885,6 +892,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -941,6 +949,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -997,6 +1006,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1053,6 +1063,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1109,6 +1120,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>LightGrey</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1169,6 +1181,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1224,6 +1237,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1281,6 +1295,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1337,6 +1352,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1393,6 +1409,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1449,6 +1466,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </RightBorder>
+                            <BackgroundColor>WhiteSmoke</BackgroundColor>
                             <FontFamily />
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1873,7 +1891,6 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                         </TablixMember>
                       </TablixMembers>
                       <Visibility>
-                        <Hidden>true</Hidden>
                         <ToggleItem>OrderCalendarYear</ToggleItem>
                       </Visibility>
                     </TablixMember>
