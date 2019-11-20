@@ -687,6 +687,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Style>
                                     <FontFamily />
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -742,6 +743,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Style>
                                     <FontFamily />
                                     <FontWeight>Bold</FontWeight>
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1028,6 +1030,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Value>=Sum(Fields!Quantity_Ordered.Value)</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>#,0;(#,0)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1085,6 +1088,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Value>=Sum(Fields!Total_Excluding_Tax.Value)</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1374,6 +1378,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Value>=Sum(Fields!Quantity_Ordered.Value)</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>#,0;(#,0)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1431,6 +1436,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Value>=Sum(Fields!Total_Excluding_Tax.Value)</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1705,6 +1711,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Value>=Fields!Quantity_Ordered.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>#,0;(#,0)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1758,6 +1765,7 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                                   <Value>=Fields!Total_Excluding_Tax.Value</Value>
                                   <Style>
                                     <FontFamily />
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
                                     <Color>#333333</Color>
                                   </Style>
                                 </TextRun>
@@ -1795,6 +1803,256 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
                             <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox44">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox44</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Blue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox45">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <BackgroundColor>Blue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox46">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox46</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <BackgroundColor>Blue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox47">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>GRAND TOTAL</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox47</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Blue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox35">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Quantity_Ordered.Value)</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0;(#,0)</Format>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox14</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Blue</BackgroundColor>
+                            <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox36">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Total_Excluding_Tax.Value)</Value>
+                                  <Style>
+                                    <FontFamily />
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>'$'#,0.00;('$'#,0.00)</Format>
+                                    <Color>White</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox15</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Blue</BackgroundColor>
+                            <FontFamily />
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <rd:FormatSymbolCulture>en-US</rd:FormatSymbolCulture>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -1891,16 +2149,20 @@ ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item
                         </TablixMember>
                       </TablixMembers>
                       <Visibility>
+                        <Hidden>true</Hidden>
                         <ToggleItem>OrderCalendarYear</ToggleItem>
                       </Visibility>
                     </TablixMember>
                   </TablixMembers>
                 </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet1</DataSetName>
             <Top>0.43in</Top>
-            <Height>1.06in</Height>
+            <Height>1.31in</Height>
             <Width>9.22917in</Width>
             <ZIndex>1</ZIndex>
             <Style />
