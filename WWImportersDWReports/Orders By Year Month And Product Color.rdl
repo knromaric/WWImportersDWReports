@@ -51,6 +51,18 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="DataSet2">
+      <Query>
+        <DataSourceName>SQLServerWWImportersDW</DataSourceName>
+        <CommandText>select @@SERVERNAME as ServerName</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ServerName">
+          <DataField>ServerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
@@ -1070,7 +1082,8 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
             <PageBreak>
               <BreakLocation>End</BreakLocation>
             </PageBreak>
-            <Top>0.49944in</Top>
+            <Top>0.02778in</Top>
+            <Left>0in</Left>
             <Height>1.24417in</Height>
             <Width>5.44792in</Width>
             <Style>
@@ -1078,13 +1091,13 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>1.80958in</Height>
+        <Height>1.30958in</Height>
         <Style />
       </Body>
       <Width>6.13542in</Width>
       <Page>
         <PageHeader>
-          <Height>1in</Height>
+          <Height>1.53in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -1098,7 +1111,7 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                       <Value>Orders By Calendar Year, Month And Product Color</Value>
                       <Style>
                         <FontFamily>Segoe UI Light</FontFamily>
-                        <FontSize>22pt</FontSize>
+                        <FontSize>17pt</FontSize>
                         <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
@@ -1109,9 +1122,78 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>textbox1</rd:DefaultName>
+              <Top>0.75278in</Top>
+              <Left>0in</Left>
               <Height>0.43in</Height>
               <Width>6.13542in</Width>
               <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtServerName">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Server: " &amp; First(Fields!ServerName.Value, "DataSet2")</Value>
+                      <Style />
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.25222in</Top>
+              <Left>3.52209in</Left>
+              <Height>0.25in</Height>
+              <Width>2.61333in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="txtLogo">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Wide Word Importers</Value>
+                      <Style>
+                        <FontSize>26pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Left>0in</Left>
+              <Height>0.725in</Height>
+              <Width>6.13542in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <BackgroundColor>Blue</BackgroundColor>
+                <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
@@ -1181,6 +1263,18 @@ ORDER BY t3.[Calendar Year],t3.[Calendar Month Number], t2.Color</CommandText>
       <NumberOfRows>2</NumberOfRows>
     </GridLayoutDefinition>
   </ReportParametersLayout>
+  <EmbeddedImages>
+    <EmbeddedImage Name="company">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAQ8AAAC6CAMAAACHgTh+AAAAqFBMVEX////u7u7t7e0zmWfs7Oz5+fn19fXy8vL8/Pz4+PgzmWj///4sl2Px8PErlmLu7e4klV85nWzg8OderIXu9/L3/PqFvqFCoHLn8+xWqX+SyK3o7eus1cBIo3XD4NHI3dNstJF6upqhyrXP59vZ7OK41MXd6OOj0LiPxapPp3yu0L7H3NG73Mp+up2OxamozLnW5NvM6NlyuZaWxK1fqoa23Mm71sl4tZgNhvE2AAARM0lEQVR4nO1da2OiOhDl4VbFhICAiIjiCx99aGvr/v9/dpOAEiCgVt3qbfg0y1prjpOZc2YmVJLoJZNLqbYhtRvUrlfafwr2U8FuFuwmtZ8K9h/6IVi7HttKajcqbcjYcryYgp0sUnowPJi1CjwEHgc8lMv3SxGD7+LRuBIeDAZy0W4yflBmZ/Bg7Gv7R03BVy35b8aWS2xI7QQD1q7l7QSPgt0s2E1qPxXsPwU7WWuVrUDGlplFsrZSXHxm9acgITOrz6BSgkQRlSISTyVIFFGpH0flJCTKUFHOjhwn7xqZ2SkZu2zXcHaKwuyUgn3KTjk3isgn4XFJFMngoTAYFOwiBpfjAQu2wEPgcQkebAw9KcswcRMWYuiV4qlStGkMVeoFu1GwYcE+J56egcQp+bZg7z0jb98439YYVGrn5NtkrSfsGsHXBR53i4fQL1xb6BehX6pQEfpF6Jdr4iH4usDjuniwMVToF6FfJKFfyPXofF3gIfQL4wdCvwj9UpFvhX7h7xShX36cnwo8BB5VeLAxVOgXoV8koV/I9eh8XeAh9AvjB0K/CP1SkW+FfuHvFKFffpyfCjwEHlV4sDFU6JeH1y+I1SlCv8jwqTuwfyFf5+MB5eGrCUL79+HB0y9Ifg5VQ1V1qyv0C15r9KrqKrmwh7D3f6l+sa0YDXzpIx/Jv1u/ILkD1MNlvDlnIfH/0y/w2dRS
+PFTQl361foF+CFg8VHPwW/l6S2pAefMXqJkLBO1fiockddehmYODxFTn9+kXYk86LgAFOHBMnf8+/dKIxkugc8CgIWSTIvE79Eu35xolYJAQ0mlRDH4DXyd42HNXzyaVvINMfhMeA8+owIKG1GW3Ao//lX5BT/1iSikC8tnGGMiX+8d965daDSnbo2BQQLwJXveprP1x9YuzOO4c9ALa1j8BiQfXL93RsdCxvzQs/qeUw96tfkGp/S1+2nS+lid6R+wiZr9xr3y9JT0hH2vzb+IhQ4gwA6vgHHxEsPq/TzwkadMJXv1v+scftFmFbhkdLb80I+xKd6lf2h0TL2cG4/vn6Rd7Mv8kP13FwMoAAd4UIuXO9AvadDRS0gPB2wYhBZ2hX56G69A1Ttongcp5lQZcylVbd6Rf/HGgJ1+uYW43ch2eyE/t956lGTwJS6787cHE4iUfYL5I98PXsbCaWHhFhw8PgnCx7kqtVgUeCJH+0rRDFGzZNgHmKMjemUp2h49d/37wkOxe/jMC3XDfq/1DQXD4Aap2CXB3cGbm8JAac/6L55J0ciS9oX7B2XXiAY4SxV/ue6NcvygwWphH4ucKQv81AxiJE60yQBrE535avyBnXqa9dPVj2iyLp/LOOxJAwULBcXnosvcGdK1blbdnwNZHP69f2mE5u8ZuM2/lkaA2andysbKwQGDF2qTH3luTFdclvocYC4eLxO31yxOEdUh4htN3de5niy8sMDq2VNAvCO489sdwSHWXbnbvgGAYZ+M2E1LByIc+mf+Yc32LANL6x/yUfN/d2Xq8mu0mk75XliiZJdgFfgp3LutUhteb2E5kZd4KrBPe2mBbc2C0wV8F8Rru79VHGJB/zdenH6ZBL1CZHQ5LwHQ66x8ws3TgrqibP32yb4Y9ASV4DBnPAbrZ2dTzKDGAhPbpWeYKeMgNe2GeqTF0q91ETGZBSuYb/xzG96cue9fbwEMvJrt0nLcmGECnAwzOVjWs
+NkQn43GpfkGQzw+PAbKBTDyVx0yg0MMo8QM2JABtBQ/zYzjFZP1QV60XR3KG65FnFmg+8J6h/M/0S1+tCp+lgAQ0T8aZ5c+EcQTwYSdaJmLTL+hRJPZd/nZvmY1TwLBmdJXdwcLTsojo7uAoElfSL87C+I4ApVWbPXeHG2bhZPop1jJwxS6J3mbnpeyXkF02zlu0MkZdeDfKEiCg9Zwr8lM+HgpqSPbHUeegaGk8zPBnfCIbzg8ZODzSMiDcXc7cNodSDg+pIQ872WXrLsa41UAyJLw/w3R1HMLl2+KB7enRlghlEgY/3Bphm1R/agz/Bsu454j9A82Y91DXvPMeEEbbjJgBRieZrYMw267RDPcFwSvhwc8sCA6CinaZRsgoAK416nRe8Y7m0engC0E4Zm6YsyZlrzj7pO5BKFyNh4cM5Swemqp/0OyK8GvssZlheISooFvplxqS0bqyQ4T1bPB3PbQpk/A3Y0/nQTIa7lI1ArQx2lfJ4Dp9kf65zzjZeVyEipRDt6YkmdDKWPsj8yt1d12Tb6ZfHD5BPqzNfJ2QEFhHKK4dOu9hERBMplJQAckh+yrZe5DeJzGlmZsfo3afUxvTzX4yS4adYZYVASBs30S/4Eh6pEMERsNE19A3ohUiZ1XdNyDUmkYOGdX7hwxMaqESf55/wCsVqnEHJtEspAeeAWvlV/OxU/AoRBFfcio7RMAcy7DYj2pGC60cEcOimRZ/LjhMFbJmLKcpBlk8Xjx+pNa1Tlui/Bfvmu6bylACHHH96+MBuxWcFNAqFrc/B+FzqdwDXptiJkO/tw+EGqXpxLf45z2cyQLzUQ4mutmL4mzSIupKPeReTTWwIL4uHggOqwo3GggIHPz5MRjlqxz7K+aQOLPsLAYyMIrijFN2/sUZrhbh0jVVrCaZ6RCgByu88WLN0tqFTLkOhFgIleJxtn7BoXsQVCYW95lqE24/uyYrM/5Pr2MtE70yeOnm2GczC+/8C4II+VF7
+Mlj1Rpab8B2dpHq8MxI8UG32CQ5xxMDKkFnwZfoFe8lLjgxn/qWp5ip+fdn8WHMTFmkLTi1NnMP9capkMGUZTSXptPOmmIDRKojTnQ5W47dRaC1NY85qlveRtkcEuBN0Lf3SkvrZxYBwN87c2colU5d7G/rb/J7ROw6JHM+fDLi690K5y7nn1SWMDKb7jmPbmX5D65kMJh5cOLdTvsnXZWeust+uHrzUIcOsNRD66Mi8FOakucqx/uFIraa/ZRxPd3tRvINOxyOpoyMyUkDvs5XCloRgtLbi4AuWNNxejAf0O5nEQmqhdVZ4qeYQoiP+Qd5nmyGOVLy2M/qtk1Z/6M9e5fw+1o6rWNYYoYwu1i8Y4AzHxM5B1s2uDWwPmbZifgw+s002nWra96W+9zsd03js8zc4v491jd2hXVSwgxfrF7j5zJC9D6rN2TIF8CJ0fH6MFDzSPWdQ/jk4BFJghJOmnI+hVzy//0o8BO/ri/XLZMlsFqDOfYRTQgaOuDt0bH6sbTG1Cd1r48wyO4QO4K0UeMvz+yje32BwmX6RpQGbZ/XlO9ZqsrxmBTeJi9Kx+bHGlK2lE+9owuFe2ejuNoLH5vkvPL8PhyZ1EOcSfgpRn00sBtkrdVnZZthHPCBcfb4BDpbM+2B5jtftJwjRGkW67ludz46juf71XTzwR4S1Dqa88To0HP4x1ZFa9WiUZWZb2psqx4N8qpUL0uohKePh+0lEBt4AY4BujQemfUvy25Y2+q5/QLzy9EsFcXFc2nxm4bCiI+dfEFQyBS1aS8dxicZSTLC7/+j8PlxTB9nSvsw39AuM2MRiWHGR8z0rRID5jIoxNBNPkZ8ZXdFfKRytDp2qogX3f3J+H3s72aCaSYXWN/TLdMnAAXoOqRcq45xyJ0f6qs6/oFqjy1AuDSeoBlkx2tHwFrzQStqZ5/fPfP6YTM/725OeGwevtPt/hn5BA7ZdROey6pioqrnGy7xxZJ5fnngsHMEXjbCo
+RoIQMAcsD73F87aIrvE3s/6b5e61rtEjPP48forgmEksOiVPEsyFDjIDm8cgjwdaZduxUymuiDzTf/fjaHETPGL/sHfbz8AkzQ/m2+2fiQciiYVZxV+bVqt2Qa4+BujRkwo8sEOxtcIkkj7JyCeVRzBybvj8MWx3vz6485tkk5+BB6xHYRo6gDn2SUYlGpfzvlV4wE3IhiBz+7TH6dkkwWN6o+ePkd1Sjwaj0iln8EU3wYn6BQ6Zgr0e7EhlXbJHDER75mDHGHCnlPG6V0GG2+72kx+Iducomrd5/pgMN4tl1TgGmJOZtKP6hWYoecBU6wHlTlCeBYd7ACytBOWnEiSIjfwFE4IAHZjaa5mpS7UVqt3k+WNQ6h4dTjFG9sEljuiXMTNQS9rP+CJLOyzMG0ezGCqn4vwLHGYES/DVIuce6Oub0hvAsWcI+TvlUj6G6l+Vw2zJOmhoP8pPIY50aVPIjaui75aRfNE6CGc+hGP8EsOdcrrdezyUMaMDsUJpx/dpNml2MXPWViWa5WI84IqMcB0faCO1/WN4wI2nHxgG+NyQ2cH2iL43FjC6OppQXbPAdzpt7pRy3Jkehoc6D/655UyO71M80J8v7B49emboJng8v4aW5S1d0lrX40TLG70AYC6hKjxaEmTaAkBb+BCvdZBEDmC4nSldN8mWy5cUg4J/OGM2AqmkCsiceUFNzN8tuwyDK+j9lkOuKNrs1otOuDR17DCceKLpb35cYS7TL2zocFeIBOAB3iMYZUP3xpRsYNYu+9Zn7P/FzEJ63l/s5A+wnnEgV5gZXMW3dPf9hs8f22s1hBCEkmPb7clqvH0NikzECCNYol+QQuqk6TqSFUeWGyytsPPVbqTzY622Uzq7PVykU29ANZbJTAt7/iUKjAW69fOTUyWHYv1CZoYL/Vbd6kqHKxdJd2lh8HCAU0IRvhKb3R3cSOq0+5bKfAu6u4g4518i14ogm1n+1fOCN6M8pdQMLwWExQPK
+OCEcSt3BDCb9JRkiiPkYOcLC4NHKRQ4yvFWfzD8JGKnqIe0DJBfPeEyX+O1/4vnJSJ55gLZ81cOIm54CwuKx+Zs6h07qd2ecf3lC0WY8Cgz2dBPQzbcI5jrcCQabhS//zPOT8Xf7vPvqfXikE558WsNziniQZnXyxdIxDvwfJ5x/Ia9p2JPxaJlL90APet3S8/t+RFLtDz0/GcZzm9PV9sNzTZw1dWPvIId46ryl9NMI23QU69j5F9IvjSb9N8sE+VymG8s5Pc3A6TpQm4mtP/b8ZASVmr+ZDF4GAyeTb5HMBlJzq6BqJEhAUfzupN/BUBhG/mgTAOZo4BNIH+H5yXgHQZjVL9ErSLVJOKxDpRWvm9kdkIrj2PafV9swLrFgKLJnVYCuWfN2cl797p+f3OLw9dZLWuQx3DHhayVdXExt7OnLm+Wq3PktwtnccDttpGt9nOfjxmul50MpGqTVa5g9m/TeUB6PFilC+sNVx3Lx/uAoR+wWBliGi12E9meyHxEPJLU76kGbfHx1pVjeFPzDnmyJCMiN1gIKBEbC9T56g6ldr5fOj909HjQCRT2T9rwN7OerOOewcTaJp63BKMhCQVEwDNMNvLAz3g2j+PM++vOTv5YGZmeGac3JSHHZZHL0N9kheE8QmaiaWM58LPqz52HkJ7/4//D3X9oh/orV5etqk2BQ2CnU7H4SFNTYF7bj2W64seNuLUk5P/X85Ev4GHcepvViGsHreuhDiKQWESd8POwwwFtitZt2HSnmYJDhrYgzI/WYeNj9l3YLZ4205F6Ch03O18KEod3F85OvwjzyeBRvFfHYs9GUid3D85PF33+5kX7JxFN29acgcS/PTxZ//yVvX1O/SBz9csF5da79mPxU4CHwqMKDjaEnZRkmboq///LTz08Wf7/yX/N1gcdD4iH+fiXXFvpF6JcqVIR+EfrlmngIvi7wuC4ebAwV+kXoF0noF3I9Ol8XeAj9wviB0C9Cv1TkW6Ff
++DtF6Jcf56cCD4FHFR5sDBX6RegXSegXcj06Xxd4CP3C+IHQL0K/VORboV/4O0Xolx/npwIPgUcVHmwMFfpF6BdJ6BdyPTpfF3jcsX75Hh5FDKpZ2UX6pcy+iX9ckGnZvxStNIt2iU9U+0q9YDfy9h6Dgn0Ej/8A4bQqBYc9EegAAAAASUVORK5CYII=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
