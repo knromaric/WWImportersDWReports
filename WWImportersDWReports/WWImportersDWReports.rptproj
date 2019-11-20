@@ -53,7 +53,7 @@
     <DataSource Include="SQLServerWWImportersDW.rds" />
   </ItemGroup>
   <ItemGroup>
-    <Report Include="Orders By Year And Product Color.rdl" />
+    <Report Include="Orders By Year Month And Product Color.rdl" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Reporting Services\Microsoft.ReportingServices.MSBuilder.targets" />
 </Project>
