@@ -9,3 +9,6 @@ INNER JOIN [Dimension].[Stock Item] t2 on t1.[Stock Item Key] = t2.[Stock Item K
 INNER JOIN Dimension.Date t3 ON t1.[Order Date Key] = t3.Date
 GROUP BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item]
 ORDER BY t3.[Calendar Year], t3.[Calendar Month Number], t3.Date, t2.[Stock Item];
+
+select distinct color
+from [Dimension].[Stock Item]
