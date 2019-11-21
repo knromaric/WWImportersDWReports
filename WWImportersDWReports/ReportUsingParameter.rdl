@@ -441,7 +441,10 @@ ORDER BY Color</CommandText>
                             <TextRuns>
                               <TextRun>
                                 <Value>=Fields!Calendar_Month_Number.Value</Value>
-                                <Style />
+                                <Style>
+                                  <TextDecoration>Underline</TextDecoration>
+                                  <Color>Blue</Color>
+                                </Style>
                               </TextRun>
                             </TextRuns>
                             <Style>
@@ -450,30 +453,27 @@ ORDER BY Color</CommandText>
                           </Paragraph>
                         </Paragraphs>
                         <rd:DefaultName>Calendar_Month_Number</rd:DefaultName>
+                        <ActionInfo>
+                          <Actions>
+                            <Action>
+                              <Drillthrough>
+                                <ReportName>Order Details</ReportName>
+                                <Parameters>
+                                  <Parameter Name="ParamMonth">
+                                    <Value>=Fields!Calendar_Month_Number.Value</Value>
+                                  </Parameter>
+                                  <Parameter Name="ParamColor">
+                                    <Value>=Fields!Color.Value</Value>
+                                  </Parameter>
+                                </Parameters>
+                              </Drillthrough>
+                            </Action>
+                          </Actions>
+                        </ActionInfo>
                         <Style>
                           <Border>
                             <Style>Solid</Style>
                           </Border>
-                          <TopBorder>
-                            <Color>Black</Color>
-                            <Style>Solid</Style>
-                            <Width>1pt</Width>
-                          </TopBorder>
-                          <BottomBorder>
-                            <Color>Black</Color>
-                            <Style>Solid</Style>
-                            <Width>1pt</Width>
-                          </BottomBorder>
-                          <LeftBorder>
-                            <Color>Black</Color>
-                            <Style>Solid</Style>
-                            <Width>1pt</Width>
-                          </LeftBorder>
-                          <RightBorder>
-                            <Color>Black</Color>
-                            <Style>Solid</Style>
-                            <Width>1pt</Width>
-                          </RightBorder>
                           <PaddingLeft>2pt</PaddingLeft>
                           <PaddingRight>2pt</PaddingRight>
                           <PaddingTop>2pt</PaddingTop>
